@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <title>Erhversakademiet Aarhus - CREATE - Showroom</title>
+    <meta name="description" content="Kom ind og se vores showroom og vores faciliteter. Vi har vejlere klar til, at hjælpe dig.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+      <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+  </head>
+  <body>
+    <!-- Navigation -->
+   <header>
+     <section class="logo"> <a href="index.html"><img src="images/logo.png" alt="logo"></a></section>
+        <section id="logo-burger-main">
+            <label for="toggle">&#9776;</label>
+        </section>
+        <nav>
+            <input type="checkbox" id="toggle" class="hidden">
+            <!-- This has to be outside of #logo-burger to work. #main-nav cannot be selected when this is in a container -->
+            <ul id="main-nav">
+                <li><a href="3d.html">3D</a></li>
+                <li><a href="vr.html">Virtual Reality</a></li>
+                <li><a href="folieskaering.html">Folieskæring</a></li>
+                <li><a href="showroom.html">Showroom</a></li>
+            </ul>
+        </nav>
+   </header>
+   <!-- Navigation slut -->
+   
+    <section class="header-img">
+      <img src="images/slider2.jpg" alt="showroom">
+      <h1 id="hetvr">SHOWROOM</h1>
+  </section>
+  
+  <section class="tred-boxtre">
+   
+   <section>
+   <h1>SHOWROOM</h1>
+   <p>Vores Showroom har åben alle hverdage fra 12:00 - 14:00 hvor du har mulighed for at komme ind og høre om de forskellige muligheder du har i CREATE. Om du bare vil ned og prøve Virtual Reality eller vil ned og snakke om din nye prototype står vi klar med åbne arme. </p>
+     </section>
+      
+        <section>
+         <h1>KONTAKT</h1>
+   <p>Har du spørgsmål eller brug for konkret vejledning om CREATE?
+Jonas Wehding
+Telefon: 7228 6385
+Mail: jweh@eaaa.dk 
+Du kan også tage en snak med de dygtige studentermedhjælpere i CREATE.</p>
+     </section>
+      </section>
+    
+  
+  <div id="map">
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYWxiZXJ0ZWZ5bmJvIiwiYSI6ImNqdGlicDgwNzJnZXg0M3A4ZGY5bGthNDMifQ.ytUyLcMrD9edYwz8k-SVaQ';
+const map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/albertefynbo/cjtibw2ve0fmz1fjrwbazwtp5',
+  center: [10.158, 56.119],
+pitch: 50,
+bearing: 23,
+  zoom: 15.0
+});
+</script>
+</div>
+ 
+
+
+  </body>
+  
+  <footer class="footer-container">
+            <section class="footer-content">
+                <h1>GROW Studentervæksthus</h1> 
+                <p>Erhvervsakademi Aarhus</p> 
+                <p>Sønderhøj 30, 8260 Viby</p> 
+                <p>Telefon 7228 6000</p>
+                <p>info@eaaa.dk</p>
+            </section>
+
+            <section class="footer-img">
+                <img src="images/facebook-logo-button.png" alt="facebook">
+                <img src="images/instagram-logo.png" alt="instagram">
+                <img src="images/linkedin.png" alt="linkedin">
+            </section>
+            <section class="footer-content"> 
+                <p id="cookies">Cookies og persondata på eaaa.dk  | 
+CVR: 31677971  | 
+EAN: 5798000560307 
+
+</p>
+            </section>
+      </footer>
+
+</html>

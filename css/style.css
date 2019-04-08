@@ -1,0 +1,876 @@
+/*CSS document*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Covik', sans-serif;
+    font-weight: 100;
+}
+
+body {
+
+    margin: auto;
+    padding: 0%;
+    background-color: #ededed;
+}
+
+header {
+    background-color: white;
+    padding-bottom: 5%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.logo {
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo img {
+    display: flex;
+    width: 35%;
+    position: absolute;
+    padding-left: 2%;
+}
+
+/* burgermenu ------------------------- */
+
+#logo-burger-main {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#main-nav {
+    display: none;
+    position: absolute;
+    list-style: none;
+    width: 100%;
+    z-index: 1;
+}
+
+#logo-burger-main label {
+    display: block;
+    font-size: 2em;
+    cursor: pointer;
+    padding-right: 1%;
+}
+
+#toggle:checked + #main-nav {
+    display: block;
+    position: absolute;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+#main-nav a {
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 120%;
+    text-decoration: none;
+    background-color: #8EC1D8;
+    padding: 3%;
+}
+
+#main-nav a:hover {
+    color: white;
+}
+
+
+#main-nav li:last-of-type {
+    border-bottom: none;
+}
+
+.forside-tekst {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.forside-tekst > p {
+display: flex;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    line-height: 22px;
+}
+
+.container-forside-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+
+}
+
+.article-box {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+    padding-bottom: 1%;
+    padding-top: 2%;
+
+}
+
+.article-box img {
+    width: 100%;
+    height: 300px;
+    padding: 1%;
+    padding-top: 5%;
+}
+
+.article-box > h1 {
+
+    font-size: 90%;
+    color: black;
+    background-color: gainsboro;
+    padding: 2% 2% 2% 2%;
+    border: 1px solid black;
+}
+
+.article-box > h1 > a {
+    text-decoration: none;
+    color: black;
+}
+
+.article-box > h1:hover { 
+    background-color: #8EC1D8;
+}
+
+.header-img {
+    
+    display: flex;
+    justify-content: center;
+    
+}
+.header-img img {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-img > h1 {
+    font-size: 50px;
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    text-shadow: 2px 0 grey;
+}
+
+.tred-box > h1 {
+    padding-top: 5%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.tred-box > p {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 22px;
+    padding-left: 5%;
+    padding-right: 5%; 
+}
+
+.het-tred {
+    padding-right: 5%;
+    padding-left: 5%;
+    display: flex;
+    text-align: center;
+}
+
+#hetvr {
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    padding-top: 12%;
+    text-shadow: 2px 0 grey;
+}
+
+#spoergsmael-img {
+    width: 500px;
+    height: 150px;
+}
+
+.youtube {
+    width: 100%;
+   height: 350px;
+}
+
+    body { margin:0; padding:0;}
+    #map { top:0; bottom:0; width:400px; height: 350px;}
+
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 7%;
+    background-color: #8EC1D8;
+}
+
+.footer-content  { 
+     display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.footer-content > p {
+    margin: 1.5%;
+}
+
+.footer-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%; 
+    padding-bottom: 2.5%;
+ }   
+
+.footer-img img {
+    width: 13%;
+    height: 500%;
+    padding: 2%;
+    padding-bottom: 1%;
+    padding-top: 2%;   
+}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.slideimg {
+    width: 100%;
+    height: 350px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+   /**********************************************/
+/*MEDIA QUERY TABLET AND ABOVE*/
+    @media screen and (min-width: 600px) and (max-width: 1023px) {
+
+    #logo-burger-main {
+        display: none;
+        margin: 0;
+    }
+
+    header > nav {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 8%;
+    }
+
+
+    #main-nav {
+        display: flex;
+        margin-right: .5em;
+        list-style: none;
+        justify-content: flex-end;
+        width: 75%;
+        background: none;
+    }
+
+    #main-nav a {
+        margin-left: 1em;
+        margin-right: 1em;
+        line-height: 1.4em;
+        padding-bottom: 0%;
+        font-size: 110%;
+        padding: 5px;
+        background: none;
+        border: none;
+        color: black;
+    }
+
+    .logo {
+        justify-content: flex-start;
+        padding-top: 2%;
+        padding-bottom: 0;
+
+
+    }
+    .logo img {
+        width: 30%;
+        padding-left: 5%;
+    }
+    
+    #main-nav a:hover {
+    color: #717171;
+}
+    
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+    
+    .slideimg {
+    width: 100%;
+    height: 350px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+    
+
+.container-forside-column {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+
+}
+
+.article-box {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding-bottom: 1%;
+    padding-top: 2%;
+
+}
+
+.article-box img {
+    width: 100%;
+    height: 150px;
+    padding-top: 5%;
+}
+    
+    .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 7%;
+    background-color: #8EC1D8;
+}
+
+.footer-content  { 
+     display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.footer-content > p {
+    margin: 1.5%;
+}
+
+.footer-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 30%; 
+    height: 20%;
+    padding-bottom: 2.5%;
+ }   
+
+.footer-img img {
+    width: 13%;
+    height: 500%;
+    padding: 2%;
+    padding-bottom: 1%;
+    padding-top: 18%;   
+}
+    
+    #cookies {
+        display: flex;
+        padding-top: 30%;
+    }
+    
+.header-img img {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+#hetvr {
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    padding-top: 4%;
+    text-shadow: 2px 0 grey;
+}
+    
+    #spoergsmael-img {
+    width: 100%;
+    height: 210px;
+    }
+
+    .header-img > h1 {
+        font-size: 80px;
+    }
+    
+    .youtube {
+    width: 100%;
+   height: 400px;
+}
+    
+    #map {
+        width: 100%;
+        height: 350px;
+    }
+    }
+/**********************************************/
+/*MEDIA QUERY LAPTOP AND ABOVE*/
+@media all and (min-width: 1024px) {
+
+ #logo-burger-main {
+        display: none;
+        margin: 0;
+    }
+
+    header > nav {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 2%;
+    }
+
+
+    #main-nav {
+        display: flex;
+        margin-right: .5em;
+        list-style: none;
+        justify-content: flex-end;
+        width: 85%;
+        background: none;
+    }
+
+    #main-nav a {
+        margin-left: 1em;
+        margin-right: 1em;
+        line-height: 1.4em;
+        padding-bottom: 0%;
+        font-size: 110%;
+        padding: 5px;
+        background: none;
+        border: none;
+        color: black;
+    }
+
+    .logo {
+        justify-content: flex-start;
+        padding-top: 2%;
+        padding-bottom: 0;
+
+
+    }
+    .logo img {
+        width: 20%;
+        padding-left: 5%;
+    }
+    
+    #main-nav a:hover {
+    color: #717171;
+}
+    
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+    
+    .slideimg {
+    width: 100%;
+    height: 500px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+    
+
+.container-forside-column {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+
+}
+
+.article-box {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding-bottom: 1%;
+    padding-top: 2%;
+
+}
+
+.article-box img {
+    width: 100%;
+    height: 300px;
+    padding-top: 5%;
+}
+    
+    .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 7%;
+    background-color: #8EC1D8;
+}
+
+.footer-content  { 
+     display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12.5px;
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+    
+    .footer-content > p {
+    margin: 1.5%;
+}
+
+.footer-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 30%; 
+    height: 20%;
+    padding-bottom: 2.5%;
+ }   
+
+.footer-img img {
+    width: 13%;
+    height: 500%;
+    padding: 2%;
+    padding-bottom: 1%;
+    padding-top: 18%;   
+}
+    
+    .footer-content h1 {
+        display: flex;
+        justify-content: center;
+        padding-left: 10%;
+    }
+    
+    #cookies {
+        display: flex;
+        padding-top: 30%;
+    }
+    
+.header-img img {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+#hetvr {
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    text-shadow: 2px 0 grey;
+}
+    
+    #spoergsmael-img {
+    width: 100%;
+    height: 250px;
+    }
+
+    .header-img > h1 {
+        font-size: 80px;
+    }
+    
+    .youtube {
+    width: 100%;
+   height: 400px;
+}
+    
+    #map {
+        width: 100%;
+        height: 350px;
+    }
+    
+    .tred-boxtre {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding: 5%;
+    }
+    
+    .tred-boxtre p, h1 {
+        display: flex;
+        line-height: 30px;
+    }
+    
+ .tred-box > h1 {
+    padding-top: 5%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.tred-box > p {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 22px;
+    padding-left: 5%;
+    padding-right: 5%; 
+}
+
+.het-tred {
+    padding-right: 5%;
+    padding-left: 5%;
+    display: flex;
+    text-align: center;
